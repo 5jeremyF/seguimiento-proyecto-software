@@ -18,3 +18,7 @@
 - Organización de carpetas
 - Configuración colaborativa GitHub
 - Control de versiones con ramas
+## - 2026-05-13
+### Añadido
+- Documentación inicial del flujo de trabajo con Git Bash.
+- Actualización de archivos de seguimiento del proyecto.
