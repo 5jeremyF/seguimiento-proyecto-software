@@ -1,0 +1,67 @@
+{% extends 'public/base_cpanel.html' %}
+
+{% block title %}
+Inicio
+{% endblock %}
+
+{% block body %}
+
+<div class="welcome-banner">
+    <div>
+        <h1>Bienvenido al Sistema</h1>
+        <p>
+            Plataforma de Gestión de Empleados y Usuarios
+        </p>
+    </div>
+</div>
+
+<div class="row mt-4">
+
+    <div class="col-md-4 mb-4">
+        <div class="card dashboard-card">
+            <div class="card-body text-center">
+                <i class="bi bi-person-badge-fill dashboard-icon"></i>
+                <h4>Empleados</h4>
+                <p>Administración completa</p>
+
+                <a href="/lista-de-empleados"
+                   class="btn btn-primary">
+                    Ver Empleados
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card dashboard-card">
+            <div class="card-body text-center">
+                <i class="bi bi-people-fill dashboard-icon"></i>
+                <h4>Usuarios</h4>
+                <p>Gestión de accesos</p>
+
+                <a href="/lista-de-usuarios"
+                   class="btn btn-primary">
+                    Ver Usuarios
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card dashboard-card">
+            <div class="card-body text-center">
+                <i class="bi bi-file-earmark-bar-graph-fill dashboard-icon"></i>
+                <h4>Reportes</h4>
+                <p>Exportar información</p>
+
+                <a href="/descargar-informe-empleados"
+                   class="btn btn-primary">
+                    Descargar
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
