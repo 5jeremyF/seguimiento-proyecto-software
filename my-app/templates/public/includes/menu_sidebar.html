@@ -4,7 +4,8 @@
       <span class="app-brand-logo demo">
         <img
           src="{{ url_for('static', filename ='assets/img/logo.png') }}"
-          alt="Logo" />
+          alt="Logo"
+          class="logo-sidebar" />
       </span>
     </a>
 
@@ -17,6 +18,12 @@
 
   <div class="menu-inner-shadow"></div>
   <ul class="menu-inner py-5">
+    <li class="menu-item {% if request.path == '/' %} active {% endif %}">
+    <a href="{{ url_for('inicio') }}" class="menu-link">
+        <i class="menu-icon bi bi-house-door-fill"></i>
+        <div>Inicio</div>
+    </a>
+    </li>
     <li
       class="menu-item {% if request.path == '/registrar-empleado' %} active {% endif %}">
       <a href="{{ url_for('viewFormEmpleado') }}" class="menu-link">
